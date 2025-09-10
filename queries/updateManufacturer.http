@@ -1,0 +1,9 @@
+PUT http://localhost:8080/api/manufacturers/1
+Content-Type: application/json
+
+{
+  "manufacturer_title": "Updated Company",
+  "country": "Германия",
+  "address": "456 Berlin Ave, Berlin",
+  "contact_list": "contact@updated.com"
+}

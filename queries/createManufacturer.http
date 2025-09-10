@@ -1,0 +1,9 @@
+POST http://localhost:8080/api/manufacturers
+Content-Type: application/json
+
+{
+  "manufacturer_title": "New Company",
+  "country": "США",
+  "address": "123 Main St, Anytown",
+  "contact_list": "info@newcompany.com"
+}
