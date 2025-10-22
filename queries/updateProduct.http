@@ -4,7 +4,6 @@ Content-Type: application/json
 {
   "product_title": "Обновленный продукт",
   "product_description": "Обновленное описание",
-  "expiration_date": "2029-01-01T00:00:00Z",
   "contraindications": "Не использовать при аллергии",
   "application": "Наносить вечером",
   "volume": 60.0,

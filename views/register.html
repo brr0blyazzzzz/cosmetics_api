@@ -1,0 +1,133 @@
+{{define "register"}}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Регистрация | База косметики</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .page-section {
+            padding: 100px 0;
+            min-height: calc(100vh - 100px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-card {
+            max-width: 450px;
+            padding: 2.5rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="/">База косметики</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="/">Продукты (Главная)</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/login">Вход</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead">
+        <div class="container d-flex flex-column h-100 justify-content-start pt-5">
+            <div class="masthead-heading text-uppercase">Регистрация</div>
+            <div class="masthead-subheading">Создайте новый аккаунт для доступа</div>
+        </div>
+    </header>
+
+    <section class="page-section bg-light" id="register">
+        <div class="container">
+            <div class="card form-card mx-auto border-0 rounded-3">
+                <div class="card-body">
+                    <div class="text-center mb-4">
+                        <h2 class="h3 mb-0 text-uppercase">Создание аккаунта</h2>
+                        <p class="text-muted">Заполните все необходимые поля</p>
+                    </div>
+
+                    <form action="/register" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Ваше имя *</label>
+                            <input type="text" class="form-control" id="name" name="name" required
+                                placeholder="Имя Фамилия">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email адрес *</label>
+                            <input type="email" class="form-control" id="email" name="email" required
+                                placeholder="name@example.com">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Пароль *</label>
+                            <input type="password" class="form-control" id="password" name="password" required
+                                placeholder="Придумайте пароль">
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="confirm_password" class="form-label">Подтверждение пароля *</label>
+                            <input type="password" class="form-control" id="confirm_password" name="confirm_password"
+                                required placeholder="Повторите пароль">
+                        </div>
+
+                        <div class="d-grid mb-3">
+                            <button type="submit" class="btn btn-primary btn-xl text-uppercase">
+                                Зарегистрироваться
+                            </button>
+                        </div>
+
+                        <div class="text-center mt-3">
+                            <p class="mb-0">
+                                Уже есть аккаунт?
+                                <a href="/login" class="link-primary text-decoration-none">Войти</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start"> &copy; Cosmetics 2025</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-dark text-decoration-none me-3" href="#!">Пляскина Полина</a>
+                    <a class="link-dark text-decoration-none" href="#!">Группа 01321</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
+{{end}}

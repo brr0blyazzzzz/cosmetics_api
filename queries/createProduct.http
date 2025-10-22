@@ -2,11 +2,10 @@ POST http://localhost:8080/api/products
 Content-Type: application/json
 
 {
-  "product_title": "Новый продукт",
-  "product_description": "Описание нового продукта для проверки",
-  "expiration_date": "2028-01-01T00:00:00Z",
+  "title": "Новый продукт",
+  "description": "Описание нового продукта для проверки",
   "contraindications": "Нет",
   "application": "Нанести на кожу",
-  "volume": 50.5,
+  "volume": 50,
   "manufacturer_id": 1
 }
